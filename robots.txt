@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://alkis-amenagements.fr/sitemap.xml
