@@ -307,6 +307,17 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
+    .gallery-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .gallery-link:focus-visible {
+      outline: 3px solid var(--accent-brown);
+      outline-offset: 4px;
+    }
+
     .gallery-media {
       position: relative;
       height: 220px;
@@ -644,34 +655,40 @@
         <p>PHOTOS DE CHANTIERS</p>
         <h2>Nos réalisations</h2>
       </div>
-      <p class="gallery-intro">Les emplacements sont prêts pour recevoir les vraies photos de chantier. Les visuels génériques ont été retirés afin que cette section présente uniquement des réalisations de l'entreprise.</p>
+      <p class="gallery-intro">Découvrez quelques réalisations de l'entreprise. Cliquez sur une photo pour ouvrir le book des chantiers.</p>
 
       <div class="gallery-grid">
         <article class="gallery-item">
-          <div class="gallery-media">
-            <div class="photo-placeholder" aria-hidden="true">
-              <div><strong>Photos à venir</strong><span>Plâtrerie, placo & isolation</span></div>
+          <a class="gallery-link" href="realisations.html" aria-label="Ouvrir le book des réalisations">
+            <div class="gallery-media">
+              <div class="photo-placeholder" aria-hidden="true">
+                <div><strong>Photo à venir</strong></div>
+              </div>
+              <img class="realisation-photo" src="assets/images/realisation-1.jpg" alt="Réalisation ALKIS AMÉNAGEMENT" loading="lazy">
             </div>
-            <img class="realisation-photo" src="assets/images/chantier-placo.webp" alt="Réalisation de plâtrerie et placo par ALKIS AMÉNAGEMENT" loading="lazy">
-          </div>
+          </a>
         </article>
 
         <article class="gallery-item">
-          <div class="gallery-media">
-            <div class="photo-placeholder" aria-hidden="true">
-              <div><strong>Photos à venir</strong><span>Peinture intérieure & finitions</span></div>
+          <a class="gallery-link" href="realisations.html" aria-label="Ouvrir le book des réalisations">
+            <div class="gallery-media">
+              <div class="photo-placeholder" aria-hidden="true">
+                <div><strong>Photo à venir</strong></div>
+              </div>
+              <img class="realisation-photo" src="assets/images/realisation-2.jpg" alt="Réalisation ALKIS AMÉNAGEMENT" loading="lazy">
             </div>
-            <img class="realisation-photo" src="assets/images/chantier-peinture.webp" alt="Réalisation de peinture intérieure par ALKIS AMÉNAGEMENT" loading="lazy">
-          </div>
+          </a>
         </article>
 
         <article class="gallery-item">
-          <div class="gallery-media">
-            <div class="photo-placeholder" aria-hidden="true">
-              <div><strong>Photos à venir</strong><span>Agencement intérieur & parquet</span></div>
+          <a class="gallery-link" href="realisations.html" aria-label="Ouvrir le book des réalisations">
+            <div class="gallery-media">
+              <div class="photo-placeholder" aria-hidden="true">
+                <div><strong>Photo à venir</strong></div>
+              </div>
+              <img class="realisation-photo" src="assets/images/realisation-3.jpg" alt="Réalisation ALKIS AMÉNAGEMENT" loading="lazy">
             </div>
-            <img class="realisation-photo" src="assets/images/chantier-agencement.webp" alt="Réalisation d'agencement intérieur par ALKIS AMÉNAGEMENT" loading="lazy">
-          </div>
+          </a>
         </article>
       </div>
     </section>
