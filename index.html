@@ -28,6 +28,7 @@
     "description": "Entreprise de plâtrerie, placo, peinture intérieure, isolation et agencement intérieur basée à Riec-sur-Bélon.",
     "email": "alkis.amenagement@gmail.com",
     "telephone": "+33768149208",
+    "sameAs": ["https://g.page/r/CRRAOGz1E_-9EBI/review"],
     "identifier": {
       "@type": "PropertyValue",
       "propertyID": "SIREN",
@@ -547,6 +548,79 @@
       color: #6F4C24;
     }
 
+
+    .review-section {
+      padding-top: 0;
+    }
+
+    .review-box {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(220px, 280px);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .review-content h3 {
+      color: var(--primary-blue);
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .review-content p {
+      color: #475569;
+      margin-bottom: 1rem;
+      max-width: 60ch;
+    }
+
+    .review-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .review-link-inline {
+      color: var(--primary-blue);
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .review-link-inline:hover {
+      text-decoration: underline;
+    }
+
+    .review-qr {
+      text-align: center;
+      background: #FBFCFD;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .review-qr img {
+      width: 180px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.75rem;
+      border-radius: 8px;
+    }
+
+    .review-qr p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
     footer {
       background-color: var(--primary-blue);
       color: var(--white);
@@ -588,6 +662,23 @@
       .nav-container { padding-inline: 1rem; }
       section { padding-inline: 1.2rem; }
       .features { padding-inline: 1.2rem; }
+      .review-box {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+      .review-content h3 {
+        font-size: 1.5rem;
+      }
+      .review-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .review-actions .btn {
+        text-align: center;
+      }
+      .review-qr img {
+        width: 160px;
+      }
     }
   </style>
 </head>
@@ -733,6 +824,28 @@
             <li>Plouhinec (56)</li>
             <li>Châteauneuf-du-Faou</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="avis-google" class="review-section">
+      <div class="section-title">
+        <p>AVIS CLIENTS</p>
+        <h2>Votre avis compte</h2>
+      </div>
+      <div class="review-box">
+        <div class="review-content">
+          <h3>Vous avez fait appel à ALKIS AMÉNAGEMENT&nbsp;?</h3>
+          <p>Un avis Google aide les futurs clients à découvrir l'entreprise et à se faire une idée de la qualité du travail réalisé. Merci pour votre retour.</p>
+          <div class="review-actions">
+            <a href="https://g.page/r/CRRAOGz1E_-9EBI/review" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Laisser un avis Google</a>
+            <a class="review-link-inline" href="https://g.page/r/CRRAOGz1E_-9EBI/review" target="_blank" rel="noopener noreferrer">https://g.page/r/CRRAOGz1E_-9EBI/review</a>
+          </div>
+        </div>
+        <div class="review-qr">
+          <img src="qr-avis-google.png" alt="QR code pour laisser un avis Google à ALKIS AMÉNAGEMENT" loading="lazy">
+          <p>Scannez ce QR code avec votre téléphone pour accéder directement à la page d'avis Google.</p>
         </div>
       </div>
     </section>
