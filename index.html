@@ -1,24 +1,626 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plaquiste &amp; peintre intérieur à Riec-sur-Bélon | ALKIS AMÉNAGEMENT</title>
+<meta content="ALKIS AMÉNAGEMENT réalise vos travaux de plâtrerie, placo, peinture intérieure, isolation et agencement à Riec-sur-Bélon, Quimperlé, Pont-Aven et dans le Sud-Finistère. Devis gratuit." name="description"/>
+<style>
+    :root{
+      --navy:#182A3A;
+      --navy-2:#243E53;
+      --chestnut:#A88B68;
+      --chestnut-dark:#846A4E;
+      --sand:#F1EAE1;
+      --paper:#F8F7F4;
+      --white:#FFFFFF;
+      --text:#283440;
+      --muted:#687582;
+      --line:#E7E2DB;
+      --shadow:0 18px 50px rgba(24,42,58,.12);
+      --radius:22px;
+      --max:1180px;
+    }
 
-  <title>Plaquiste & peintre intérieur à Riec-sur-Bélon | ALKIS AMÉNAGEMENT</title>
-  <meta name="description" content="ALKIS AMÉNAGEMENT réalise vos travaux de plâtrerie, placo, peinture intérieure, isolation et agencement à Riec-sur-Bélon, Quimperlé, Pont-Aven et dans le Sud-Finistère. Devis gratuit.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#1A2B3C">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231A2B3C%27/%3E%3Cpath d=%27M12 46 27 16h10l15 30H41l-3-7H26l-3 7H12zm18-16h4l-2-5-2 5z%27 fill=%27%23A88B68%27/%3E%3C/svg%3E">
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:var(--paper);
+      line-height:1.65;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    :focus-visible{outline:3px solid var(--chestnut);outline-offset:4px}
 
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Plaquiste & peintre intérieur à Riec-sur-Bélon | ALKIS AMÉNAGEMENT">
-  <meta property="og:description" content="Plâtrerie, placo, peinture intérieure, isolation et agencement autour de Riec-sur-Bélon. Devis gratuit.">
+    .container{
+      width:min(var(--max), calc(100% - 40px));
+      margin-inline:auto;
+    }
 
-  <link rel="canonical" href="https://alkis-amenagements.fr/">
-  <meta property="og:url" content="https://alkis-amenagements.fr/">
+    /* Header */
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.94);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(24,42,58,.08);
+    }
+    .nav-wrap{
+      min-height:84px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:28px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+      flex:0 0 auto;
+    }
+    .brand img{
+      width:172px;
+      height:auto;
+    }
+    nav ul{
+      list-style:none;
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--navy);
+      font-weight:700;
+      font-size:.95rem;
+      transition:color .2s ease;
+    }
+    nav a:hover{color:var(--chestnut-dark)}
+    .header-cta{
+      text-decoration:none;
+      font-weight:800;
+      color:var(--white);
+      background:var(--chestnut);
+      padding:12px 18px;
+      border-radius:999px;
+      white-space:nowrap;
+      transition:transform .2s ease, background .2s ease;
+    }
+    .header-cta:hover{
+      transform:translateY(-2px);
+      background:var(--chestnut-dark);
+    }
 
-  <script type="application/ld+json">
+    /* Hero */
+    .hero{
+      background:var(--navy);
+      color:var(--white);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:-30% auto auto -12%;
+      width:520px;
+      height:520px;
+      border-radius:50%;
+      background:rgba(168,139,104,.12);
+      filter:blur(2px);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-180px;
+      bottom:-240px;
+      width:520px;
+      height:520px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:50%;
+    }
+    .hero-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:1.04fr .96fr;
+      gap:58px;
+      align-items:center;
+      min-height:600px;
+      padding:66px 0 72px;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:18px;
+      color:#E7D8C7;
+      font-size:.78rem;
+      font-weight:900;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .eyebrow::before{
+      content:"";
+      width:42px;
+      height:2px;
+      background:var(--chestnut);
+    }
+    .hero h1{
+      max-width:760px;
+      font-size:clamp(2.65rem, 5vw, 4.9rem);
+      line-height:1.03;
+      letter-spacing:-.045em;
+      margin-bottom:22px;
+    }
+    .hero h1 span{color:#D9C3AA}
+    .hero-lead{
+      max-width:660px;
+      color:#D9E0E6;
+      font-size:clamp(1.08rem, 2vw, 1.25rem);
+      margin-bottom:30px;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-bottom:30px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:50px;
+      padding:0 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:850;
+      transition:transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn-primary{
+      background:var(--chestnut);
+      color:var(--white);
+    }
+    .btn-primary:hover{
+      background:var(--chestnut-dark);
+      transform:translateY(-2px);
+    }
+    .btn-secondary{
+      color:var(--white);
+      border:1px solid rgba(255,255,255,.38);
+      background:rgba(255,255,255,.04);
+    }
+    .btn-secondary:hover{
+      border-color:var(--white);
+      background:rgba(255,255,255,.08);
+      transform:translateY(-2px);
+    }
+    .hero-proof{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 18px;
+      color:#CAD4DD;
+      font-size:.92rem;
+      font-weight:700;
+    }
+    .hero-proof span::before{
+      content:"✓";
+      color:#D9C3AA;
+      margin-right:7px;
+    }
+
+    .hero-visual{
+      position:relative;
+    }
+    .hero-photo{
+      min-height:440px;
+      border-radius:30px;
+      background:
+        linear-gradient(180deg, rgba(24,42,58,.05), rgba(24,42,58,.58)),
+        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=86') center/cover;
+      box-shadow:0 34px 80px rgba(0,0,0,.28);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .hero-card{
+      position:absolute;
+      left:-28px;
+      bottom:26px;
+      width:min(320px, 84%);
+      background:var(--white);
+      color:var(--navy);
+      padding:20px;
+      border-radius:18px;
+      box-shadow:var(--shadow);
+    }
+    .hero-card small{
+      display:block;
+      color:var(--chestnut-dark);
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-weight:900;
+      margin-bottom:5px;
+    }
+    .hero-card strong{
+      font-size:1.15rem;
+      line-height:1.25;
+      display:block;
+    }
+
+    /* Trust strip */
+    .trust-strip{
+      background:var(--white);
+      border-bottom:1px solid var(--line);
+    }
+    .trust-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+    }
+    .trust-item{
+      padding:22px 20px;
+      text-align:center;
+      color:var(--navy);
+      font-weight:850;
+      border-right:1px solid var(--line);
+    }
+    .trust-item:last-child{border-right:0}
+    .trust-item span{
+      display:block;
+      margin-top:2px;
+      color:var(--muted);
+      font-weight:600;
+      font-size:.84rem;
+    }
+
+    /* Generic sections */
+    section.content{
+      padding:92px 0;
+    }
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:30px;
+      margin-bottom:42px;
+    }
+    .kicker{
+      color:var(--chestnut-dark);
+      font-size:.77rem;
+      font-weight:900;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+    .section-head h2,
+    .features h2,
+    .contact-title{
+      color:var(--navy);
+      font-size:clamp(2rem, 3.4vw, 3.2rem);
+      line-height:1.08;
+      letter-spacing:-.035em;
+    }
+    .section-intro{
+      max-width:510px;
+      color:var(--muted);
+      font-size:1.02rem;
+    }
+
+    /* Services */
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+    .service-card{
+      position:relative;
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px 24px 26px;
+      min-height:290px;
+      box-shadow:0 10px 30px rgba(24,42,58,.05);
+      overflow:hidden;
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .service-card:hover{
+      transform:translateY(-6px);
+      border-color:#D8C8B6;
+      box-shadow:var(--shadow);
+    }
+    .service-num{
+      width:48px;
+      height:48px;
+      display:grid;
+      place-items:center;
+      border-radius:14px;
+      background:var(--sand);
+      color:var(--chestnut-dark);
+      font-weight:900;
+      margin-bottom:24px;
+    }
+    .service-card h3{
+      color:var(--navy);
+      font-size:1.18rem;
+      line-height:1.25;
+      margin-bottom:12px;
+    }
+    .service-card p{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .service-card::after{
+      content:"";
+      position:absolute;
+      right:-42px;
+      bottom:-55px;
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:rgba(168,139,104,.08);
+    }
+
+    /* Features */
+    .features-wrap{
+      background:linear-gradient(135deg, #EEF1F3, #F6F2EC);
+      border-radius:32px;
+      padding:58px;
+      border:1px solid var(--line);
+    }
+    .features-head{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 42px;
+    }
+    .features-head .kicker{margin-bottom:10px}
+    .features-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+    .feature{
+      background:rgba(255,255,255,.75);
+      border:1px solid rgba(255,255,255,.9);
+      padding:24px 20px;
+      border-radius:18px;
+    }
+    .feature b{
+      color:var(--navy);
+      display:block;
+      margin-bottom:6px;
+      font-size:1rem;
+    }
+    .feature p{color:var(--muted);font-size:.9rem}
+
+    /* Gallery */
+    .gallery{
+      background:var(--navy);
+      color:var(--white);
+    }
+    .gallery .section-head h2{color:var(--white)}
+    .gallery .kicker{color:#D9C3AA}
+    .gallery .section-intro{color:#C8D2DB}
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:1.2fr .9fr .9fr;
+      gap:18px;
+    }
+    .gallery-item{
+      min-height:390px;
+      border-radius:24px;
+      overflow:hidden;
+      position:relative;
+      background:#20384A;
+      box-shadow:0 18px 42px rgba(0,0,0,.18);
+    }
+    .gallery-item img{
+      width:100%;
+      height:100%;
+      min-height:390px;
+      object-fit:cover;
+      transition:transform .45s ease;
+    }
+    .gallery-item:hover img{transform:scale(1.045)}
+    .gallery-caption{
+      position:absolute;
+      left:16px;
+      right:16px;
+      bottom:16px;
+      padding:16px 18px;
+      border-radius:16px;
+      background:rgba(17,31,43,.78);
+      backdrop-filter:blur(8px);
+      border:1px solid rgba(255,255,255,.14);
+      font-weight:850;
+    }
+    .gallery-note{
+      margin-top:26px;
+      color:#C7D1D9;
+      font-size:.93rem;
+      text-align:center;
+    }
+
+    /* Zone */
+    .zone-box{
+      margin-top:28px;
+      background:var(--white);
+      border:1px solid var(--line);
+      border-left:5px solid var(--chestnut);
+      padding:28px 30px;
+      border-radius:18px;
+      box-shadow:0 10px 28px rgba(24,42,58,.05);
+    }
+    .zone-box h3{
+      color:var(--navy);
+      margin-bottom:10px;
+      font-size:1.25rem;
+    }
+    .zone-box p{color:var(--muted)}
+    .zone-box p+p{margin-top:6px}
+
+    /* Contact */
+    .contact-section{
+      padding:92px 0;
+    }
+    .contact-shell{
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:34px;
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:32px;
+      padding:42px;
+      box-shadow:var(--shadow);
+    }
+    .contact-copy{
+      padding:12px 12px 12px 0;
+    }
+    .contact-copy .kicker{margin-bottom:10px}
+    .contact-copy > p{
+      color:var(--muted);
+      margin:16px 0 26px;
+    }
+    .contact-info{
+      display:grid;
+      gap:10px;
+      color:var(--muted);
+      font-size:.94rem;
+    }
+    .contact-info strong{color:var(--navy)}
+    .contact-info a{
+      color:var(--navy);
+      font-weight:800;
+      text-decoration:none;
+    }
+    .contact-form form{
+      display:grid;
+      gap:13px;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea{
+      width:100%;
+      padding:14px 15px;
+      border:1px solid #D7DEE4;
+      background:#FBFCFD;
+      border-radius:12px;
+      color:var(--text);
+      font:inherit;
+    }
+    .contact-form textarea{resize:vertical;min-height:128px}
+    .contact-form button{
+      border:0;
+      cursor:pointer;
+      font:inherit;
+    }
+
+    /* Footer */
+    footer{
+      background:#101F2C;
+      color:var(--white);
+      padding:42px 0;
+      margin-top:18px;
+    }
+    .footer-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+    }
+    .footer-logo{
+      width:160px;
+      filter:brightness(0) invert(1);
+      opacity:.94;
+    }
+    footer p{
+      color:#AAB7C2;
+      font-size:.87rem;
+      text-align:right;
+    }
+
+    @media (max-width: 980px){
+      nav{display:none}
+      .hero-grid{grid-template-columns:1fr;min-height:auto;padding:58px 0 70px}
+      .hero-visual{max-width:720px}
+      .hero-photo{min-height:370px}
+      .hero-card{left:18px}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .features-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery-grid{grid-template-columns:1fr 1fr}
+      .gallery-item:first-child{grid-column:1/-1}
+      .contact-shell{grid-template-columns:1fr}
+      .contact-copy{padding-right:0}
+    }
+
+    @media (max-width: 680px){
+      .container{width:min(var(--max), calc(100% - 28px))}
+      .nav-wrap{min-height:72px;gap:12px}
+      .brand img{width:128px}
+      .header-cta{padding:10px 14px;font-size:.88rem}
+      .hero-grid{padding-top:48px;gap:36px}
+      .hero h1{font-size:clamp(2.45rem, 12vw, 3.6rem)}
+      .hero-photo{min-height:300px;border-radius:22px}
+      .hero-card{position:relative;left:auto;bottom:auto;margin:-44px 18px 0;width:auto}
+      .trust-grid{grid-template-columns:1fr 1fr}
+      .trust-item:nth-child(2){border-right:0}
+      .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      section.content,.contact-section{padding:70px 0}
+      .section-head{display:block}
+      .section-intro{margin-top:16px}
+      .services-grid,.features-grid,.gallery-grid{grid-template-columns:1fr}
+      .gallery-item:first-child{grid-column:auto}
+      .features-wrap{padding:36px 20px;border-radius:24px}
+      .gallery-item,.gallery-item img{min-height:330px}
+      .contact-shell{padding:28px 20px;border-radius:24px}
+      .footer-inner{flex-direction:column;text-align:center}
+      footer p{text-align:center}
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{scroll-behavior:auto !important;transition:none !important}
+    }
+  
+/* V2 : photo panoramique d'accueil */
+.hero{background:linear-gradient(90deg, rgba(13,29,43,.94) 0%, rgba(13,29,43,.83) 47%,rgba(13,29,43,.42) 100%),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=88') center 48% / cover no-repeat;}
+.hero-grid{display:flex;align-items:center;min-height:650px;padding:100px 0;}
+.hero-grid>div:first-child{width:min(780px,100%);}
+.hero-visual{display:none;}
+.hero::before,.hero::after{pointer-events:none}
+.hero h1{font-size:clamp(2.7rem,5.5vw,5.3rem)}
+.hero-lead{max-width:620px}
+.hero-photo-credit{margin-top:20px;color:#e0e4e8;font-size:.78rem}
+/* Accessibilité */
+.a11y-toggle{position:fixed;right:20px;bottom:20px;z-index:101;border:2px solid #fff;border-radius:999px;background:#a88b68;color:#142638;box-shadow:0 8px 30px #0004;padding:13px 20px;font:800 .95rem inherit;cursor:pointer}
+.a11y-panel{position:fixed;right:20px;bottom:82px;z-index:102;width:min(370px,calc(100vw - 28px));max-height:min(78vh,660px);overflow:auto;background:#fff;color:#1a2b3c;border-radius:18px;padding:25px;box-shadow:0 20px 70px #0005;border:1px solid #ccd5dc}
+.a11y-panel[hidden]{display:none}
+.a11y-panel h2{font-size:1.3rem;margin:0 0 7px}
+.a11y-panel p{font-size:.87rem;margin:0 0 16px;color:#465563}
+.a11y-options{display:grid;gap:10px}
+.a11y-options button,.a11y-options label{padding:11px 12px;border:1px solid #b4c0c9;border-radius:10px;text-align:left;font-weight:700;cursor:pointer;background:#f5f7f8;color:#182a3a}
+.a11y-options button[aria-pressed="true"]{background:#182a3a;color:#fff}
+.a11y-options button:focus-visible,.a11y-toggle:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+.a11y-close{float:right;background:transparent;border:0;cursor:pointer;font-size:1.5rem;color:#182a3a}
+html.a11y-large{font-size:120%}
+html.a11y-extra-large{font-size:140%}
+html.a11y-spacing body{letter-spacing:.055em;word-spacing:.15em;line-height:1.9}
+html.a11y-underline a{text-decoration:underline!important;text-underline-offset:3px}
+html.a11y-motion *,html.a11y-motion *::before,html.a11y-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.a11y-contrast body{background:#fff!important;color:#000!important}
+html.a11y-contrast .hero,html.a11y-contrast .gallery,html.a11y-contrast footer{background:#000!important;color:#fff!important}
+html.a11y-contrast .service-card,html.a11y-contrast .feature,html.a11y-contrast .features-wrap,html.a11y-contrast .contact-shell,html.a11y-contrast .zone-box{background:#fff!important;color:#000!important;border:2px solid #000!important}
+html.a11y-contrast h1,html.a11y-contrast h2,html.a11y-contrast h3,html.a11y-contrast p,html.a11y-contrast .service-card p,html.a11y-contrast .feature p,html.a11y-contrast .zone-box p{color:inherit!important}
+html.a11y-contrast .hero h1 span{color:#ffe09a!important}
+.legal-nav{margin-top:15px;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:18px}
+.legal-nav a{color:#fff;font-weight:700;font-size:.88rem}
+.form-privacy{font-size:.8rem;color:#536271;line-height:1.5}
+.form-privacy a{color:#182a3a}
+.skip-link{position:absolute;left:12px;top:-70px;background:#fff;color:#000;padding:12px;z-index:200}
+.skip-link:focus{top:8px}
+@media(max-width:680px){.hero{background-position:60% center}.hero-grid{min-height:590px;padding:76px 0}.a11y-toggle{right:12px;bottom:12px}.a11y-panel{right:12px;bottom:72px}.legal-nav{justify-content:center}}
+
+  .gallery-click{display:block;height:100%;text-decoration:none}.gallery-click:focus-visible{outline:3px solid #d9c3aa;outline-offset:-5px}.contact-info a{color:#182a3a;font-weight:700}@media(max-width:680px){#avis-google .container{grid-template-columns:1fr!important}}</style>
+<meta content="index,follow,max-image-preview:large" name="robots"/><meta content="#1A2B3C" name="theme-color"/><link href="https://alkis-amenagements.fr/" rel="canonical"/><link href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231A2B3C%27/%3E%3Cpath d=%27M12 46 27 16h10l15 30H41l-3-7H26l-3 7H12zm18-16h4l-2-5-2 5z%27 fill=%27%23A88B68%27/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/><meta content="fr_FR" property="og:locale"/><meta content="website" property="og:type"/><meta content="Plaquiste &amp; peintre intérieur à Riec-sur-Bélon | ALKIS AMÉNAGEMENT" property="og:title"/><meta content="Plâtrerie, placo, peinture intérieure, isolation et agencement autour de Riec-sur-Bélon. Devis gratuit." property="og:description"/><meta content="https://alkis-amenagements.fr/" property="og:url"/><script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
@@ -66,926 +668,238 @@
       ]
     }
   }
-  </script>
-
-  <style>
-    :root {
-      --primary-blue: #1A2B3C;
-      --secondary-blue: #2E4A62;
-      --accent-brown: #A88B68;
-      --bg-light: #F8F9FA;
-      --text: #2D3748;
-      --muted: #64748B;
-      --white: #FFFFFF;
-      --border: #D8E0E7;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      color: var(--text);
-      background-color: var(--bg-light);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    header {
-      background-color: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      padding: 0.5rem 0;
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1.5rem;
-      padding: 0.5rem 2rem;
-    }
-
-    .logo-container img {
-      max-height: 180px;
-      width: auto;
-      display: block;
-      transition: transform 0.3s ease;
-      object-fit: contain;
-    }
-
-    .logo-container img:hover {
-      transform: scale(1.03);
-    }
-
-    .logo-fallback {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--primary-blue);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .logo-fallback span {
-      display: block;
-      font-size: 0.85rem;
-      color: var(--accent-brown);
-      letter-spacing: 3px;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--primary-blue);
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover,
-    nav a:focus-visible {
-      color: var(--accent-brown);
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: var(--primary-blue);
-      color: var(--white);
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .btn:hover,
-    .btn:focus-visible {
-      background-color: var(--secondary-blue);
-    }
-
-    .btn-accent {
-      background-color: var(--accent-brown);
-    }
-
-    .btn-accent:hover,
-    .btn-accent:focus-visible {
-      background-color: #8A7051;
-    }
-
-    .hero {
-      /* Quand la vraie photo principale est prête, il suffit d'ajouter
-         assets/images/hero-chantier.webp : le dégradé reste en surimpression. */
-      background-image:
-        linear-gradient(rgba(26, 43, 60, 0.90), rgba(26, 43, 60, 0.90)),
-        url('assets/images/hero-chantier.webp');
-      background-position: center;
-      background-size: cover;
-      background-color: var(--primary-blue);
-      color: var(--white);
-      text-align: center;
-      padding: 6rem 2rem;
-    }
-
-    .hero-content {
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 4vw, 2.75rem);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #E2E8F0;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn-outline {
-      background-color: transparent;
-      border: 2px solid var(--white);
-    }
-
-    .btn-outline:hover,
-    .btn-outline:focus-visible {
-      background-color: rgba(255,255,255,0.12);
-    }
-
-    section {
-      padding: 5rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      scroll-margin-top: 150px;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .section-title h2 {
-      font-size: 2rem;
-      color: var(--primary-blue);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .section-title p {
-      color: var(--accent-brown);
-      font-weight: 700;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .service-card {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      border-top: 4px solid var(--primary-blue);
-      transition: transform 0.3s, border-color 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      border-top-color: var(--accent-brown);
-    }
-
-    .service-card h3 {
-      color: var(--primary-blue);
-      margin-bottom: 1rem;
-    }
-
-    .gallery-intro {
-      max-width: 760px;
-      margin: -1.5rem auto 2.5rem;
-      text-align: center;
-      color: var(--muted);
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .gallery-item {
-      background: var(--white);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    .gallery-link {
-      display: block;
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .gallery-link:focus-visible {
-      outline: 3px solid var(--accent-brown);
-      outline-offset: 4px;
-    }
-
-    .gallery-media {
-      position: relative;
-      height: 220px;
-      overflow: hidden;
-      background:
-        linear-gradient(135deg, rgba(26,43,60,0.96), rgba(46,74,98,0.86));
-    }
-
-    .gallery-media img {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s;
-    }
-
-    .gallery-item:hover .gallery-media img {
-      transform: scale(1.03);
-    }
-
-    .photo-placeholder {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      display: grid;
-      place-items: center;
-      padding: 2rem;
-      text-align: center;
-      color: var(--white);
-    }
-
-    .photo-placeholder strong {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-size: 1.05rem;
-    }
-
-    .photo-placeholder span {
-      display: block;
-      color: #D8E2EA;
-      font-size: 0.9rem;
-    }
-
-    .gallery-caption {
-      padding: 1rem;
-      text-align: center;
-      font-weight: 600;
-      color: var(--primary-blue);
-    }
-
-    .features {
-      background-color: #EBF1F5;
-      padding: 4rem 2rem;
-      border-radius: 8px;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      text-align: center;
-    }
-
-    .feature-item h3 {
-      color: var(--primary-blue);
-      margin-bottom: 0.5rem;
-    }
-
-    .zone-box {
-      margin-top: 3rem;
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 8px;
-      border-left: 5px solid var(--accent-brown);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-    }
-
-    .zone-box h3 {
-      color: var(--primary-blue);
-      margin-bottom: 0.8rem;
-    }
-
-    .city-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-      list-style: none;
-      margin-top: 1rem;
-    }
-
-    .city-list li {
-      background: #EEF3F7;
-      border: 1px solid #D9E2E8;
-      border-radius: 999px;
-      padding: 0.35rem 0.7rem;
-      font-size: 0.9rem;
-      color: var(--primary-blue);
-    }
-
-    .contact-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 3rem;
-    }
-
-    .contact-info h3 {
-      color: var(--primary-blue);
-      margin-bottom: 1rem;
-    }
-
-    .contact-info p {
-      margin-bottom: 1rem;
-    }
-
-    .contact-info a {
-      color: var(--primary-blue);
-      font-weight: 700;
-    }
-
-    .pending-info {
-      color: #8A5B23;
-      font-weight: 700;
-    }
-
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-    }
-
-    .contact-form label {
-      color: var(--primary-blue);
-      font-weight: 600;
-      margin-bottom: -0.45rem;
-    }
-
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.8rem;
-      border: 1px solid #CBD5E0;
-      border-radius: 4px;
-      font-size: 1rem;
-      background: var(--white);
-      color: var(--text);
-    }
-
-    .contact-form input:focus,
-    .contact-form select:focus,
-    .contact-form textarea:focus {
-      outline: 3px solid rgba(168, 139, 104, 0.22);
-      border-color: var(--accent-brown);
-    }
-
-    .privacy-short {
-      font-size: 0.82rem;
-      line-height: 1.5;
-      color: var(--muted);
-      margin-top: 0.2rem;
-    }
-
-    .privacy-short a {
-      color: var(--primary-blue);
-      font-weight: 600;
-    }
-
-    .legal-section {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-    }
-
-    .legal-grid {
-      display: grid;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    details.legal-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.03);
-    }
-
-    details.legal-card summary {
-      cursor: pointer;
-      padding: 1.1rem 1.25rem;
-      color: var(--primary-blue);
-      font-weight: 700;
-      list-style-position: inside;
-    }
-
-    .legal-content {
-      padding: 0 1.25rem 1.25rem;
-      color: #475569;
-    }
-
-    .legal-content h3 {
-      color: var(--primary-blue);
-      margin: 1.1rem 0 0.4rem;
-      font-size: 1rem;
-    }
-
-    .legal-content p,
-    .legal-content ul {
-      margin-bottom: 0.8rem;
-    }
-
-    .legal-content ul {
-      padding-left: 1.2rem;
-    }
-
-    .legal-content a {
-      color: var(--primary-blue);
-      font-weight: 600;
-    }
-
-    .legal-warning {
-      padding: 0.9rem 1rem;
-      border-left: 4px solid var(--accent-brown);
-      background: #FBF7F1;
-      border-radius: 4px;
-      color: #6F4C24;
-    }
-
-
-    .review-section {
-      padding-top: 0;
-    }
-
-    .review-box {
-      max-width: 1100px;
-      margin: 0 auto;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(220px, 280px);
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .review-content h3 {
-      color: var(--primary-blue);
-      font-size: 1.8rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .review-content p {
-      color: #475569;
-      margin-bottom: 1rem;
-      max-width: 60ch;
-    }
-
-    .review-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-      margin-top: 1rem;
-    }
-
-    .review-link-inline {
-      color: var(--primary-blue);
-      font-weight: 600;
-      text-decoration: none;
-      word-break: break-all;
-    }
-
-    .review-link-inline:hover {
-      text-decoration: underline;
-    }
-
-    .review-qr {
-      text-align: center;
-      background: #FBFCFD;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem;
-    }
-
-    .review-qr img {
-      width: 180px;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto 0.75rem;
-      border-radius: 8px;
-    }
-
-    .review-qr p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.45;
-    }
-
-    footer {
-      background-color: var(--primary-blue);
-      color: var(--white);
-      text-align: center;
-      padding: 3rem 2rem;
-      margin-top: 4rem;
-    }
-
-    .footer-logo {
-      max-height: 160px;
-      width: auto;
-      margin: 0 auto 1.5rem auto;
-      display: block;
-      filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-    }
-
-    footer p {
-      font-size: 0.9rem;
-      color: #C5D0D9;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-
-    .footer-links a {
-      color: var(--white);
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      nav ul { display: none; }
-      .logo-container img { max-height: 120px; }
-      .nav-container { padding-inline: 1rem; }
-      section { padding-inline: 1.2rem; }
-      .features { padding-inline: 1.2rem; }
-      .review-box {
-        grid-template-columns: 1fr;
-        padding: 1.5rem;
-      }
-      .review-content h3 {
-        font-size: 1.5rem;
-      }
-      .review-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .review-actions .btn {
-        text-align: center;
-      }
-      .review-qr img {
-        width: 160px;
-      }
-    }
-  </style>
-</head>
+  </script></head>
 <body>
-
-  <header>
-    <div class="nav-container">
-      <div class="logo-container">
-        <img src="logo-removebg-preview.png" alt="ALKIS AMÉNAGEMENT" onerror="this.style.display='none'; document.getElementById('alt-logo').style.display='block';">
-        <div id="alt-logo" class="logo-fallback" style="display:none;">
-          ALKIS AMÉNAGEMENT
-          <span>PEINTURE • PLACO</span>
-        </div>
-      </div>
-      <nav aria-label="Navigation principale">
-        <ul>
-          <li><a href="#services">Prestations</a></li>
-          <li><a href="#realisations">Réalisations</a></li>
-          <li><a href="#pourquoi">Engagements & Zone</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="btn btn-accent">Devis Gratuit</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <h1 id="hero-title">Plaquiste, peintre intérieur & agencement à Riec-sur-Bélon</h1>
-        <p>Artisan plaquiste et peintre intérieur basé à Riec-sur-Bélon, ALKIS AMÉNAGEMENT intervient également à Pont-Aven, Moëlan-sur-Mer, Quimperlé, Concarneau et dans le Sud-Finistère pour vos travaux de plâtrerie, peinture intérieure, isolation et agencement.</p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-accent">Demander un devis</a>
-          <a href="#contact" class="btn btn-outline">Être recontacté</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="section-title">
-        <h2>NOS EXPERTISES</h2>
-      </div>
-      <div class="services-grid">
-        <article class="service-card">
-          <h3>Plâtrerie & Placo</h3>
-          <p>Pose de plaques de plâtre, création de cloisons séparatives, doublage thermique et phonique, faux plafonds et réalisation des bandes.</p>
-        </article>
-        <article class="service-card">
-          <h3>Peinture intérieure</h3>
-          <p>Préparation des supports, mise en peinture des murs, plafonds et boiseries intérieures, avec une attention particulière portée aux finitions.</p>
-        </article>
-        <article class="service-card">
-          <h3>Agencement intérieur</h3>
-          <p>Pose de parquets stratifiés ou flottants, verrières intérieures et solutions d'agencement pour optimiser et personnaliser vos espaces.</p>
-        </article>
-        <article class="service-card">
-          <h3>Isolation intérieure</h3>
-          <p>Aménagement de combles, doublage des murs et travaux d'isolation intérieure pour améliorer le confort thermique et acoustique du logement.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="realisations">
-      <div class="section-title">
-        <p>PHOTOS DE CHANTIERS</p>
-        <h2>Nos réalisations</h2>
-      </div>
-      <p class="gallery-intro">Découvrez quelques réalisations de l'entreprise. Cliquez sur une photo pour ouvrir le book des chantiers.</p>
-
-      <div class="gallery-grid">
-        <article class="gallery-item">
-          <a class="gallery-link" href="realisations.html" aria-label="Ouvrir le book des réalisations">
-            <div class="gallery-media">
-              <div class="photo-placeholder" aria-hidden="true">
-                <div><strong>Photo à venir</strong></div>
-              </div>
-              <img class="realisation-photo" src="assets/images/realisation-1.jpg" alt="Réalisation ALKIS AMÉNAGEMENT" loading="lazy">
-            </div>
-          </a>
-        </article>
-
-        <article class="gallery-item">
-          <a class="gallery-link" href="realisations.html" aria-label="Ouvrir le book des réalisations">
-            <div class="gallery-media">
-              <div class="photo-placeholder" aria-hidden="true">
-                <div><strong>Photo à venir</strong></div>
-              </div>
-              <img class="realisation-photo" src="assets/images/realisation-2.jpg" alt="Réalisation ALKIS AMÉNAGEMENT" loading="lazy">
-            </div>
-          </a>
-        </article>
-
-        <article class="gallery-item">
-          <a class="gallery-link" href="realisations.html" aria-label="Ouvrir le book des réalisations">
-            <div class="gallery-media">
-              <div class="photo-placeholder" aria-hidden="true">
-                <div><strong>Photo à venir</strong></div>
-              </div>
-              <img class="realisation-photo" src="assets/images/realisation-3.jpg" alt="Réalisation ALKIS AMÉNAGEMENT" loading="lazy">
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section id="pourquoi">
-      <div class="features">
-        <div class="section-title">
-          <p>QUALITÉ & PROXIMITÉ</p>
-          <h2>Pourquoi choisir ALKIS AMÉNAGEMENT ?</h2>
-        </div>
-        <div class="features-grid">
-          <div class="feature-item">
-            <h3>Interlocuteur unique</h3>
-            <p>Fatih ALKIS suit votre projet et reste votre point de contact tout au long du chantier.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Soin du chantier</h3>
-            <p>Une attention particulière est portée à la protection des lieux, à l'organisation du chantier et aux finitions.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Garantie Décennale</h3>
-            <p>Tous vos travaux sont couverts par notre assurance responsabilité civile et décennale.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Devis Gratuit</h3>
-            <p>Présentez votre projet par le formulaire afin d'être recontacté et d'organiser l'étude de votre demande.</p>
-          </div>
-        </div>
-
-        <div class="zone-box">
-          <h3>📍 Plaquiste, peintre intérieur et aménagement autour de Riec-sur-Bélon</h3>
-          <p>Basée à <strong>Riec-sur-Bélon</strong>, ALKIS AMÉNAGEMENT intervient pour vos travaux de <strong>plâtrerie, placo, peinture intérieure, isolation et agencement intérieur</strong> dans le Sud-Finistère et les communes alentours.</p>
-          <p style="margin-top:0.8rem;">Nous nous déplaçons notamment à <strong>Pont-Aven, Moëlan-sur-Mer, Quimperlé, Concarneau, Quimper, Plozévet et Châteauneuf-du-Faou</strong>, ainsi que jusqu'à <strong>Plouhinec dans le Morbihan</strong>, selon la nature et l'ampleur du chantier.</p>
-          <p style="margin-top:0.8rem;">Vous recherchez un <strong>plaquiste près de Riec-sur-Bélon</strong> ou un artisan pour rénover votre intérieur dans les environs ? Contactez-nous pour étudier votre projet et obtenir un devis gratuit.</p>
-          <ul class="city-list" aria-label="Principales communes de la zone d'intervention">
-            <li>Riec-sur-Bélon</li>
-            <li>Pont-Aven</li>
-            <li>Moëlan-sur-Mer</li>
-            <li>Quimperlé</li>
-            <li>Concarneau</li>
-            <li>Quimper</li>
-            <li>Plozévet</li>
-            <li>Plouhinec (56)</li>
-            <li>Châteauneuf-du-Faou</li>
-            <li>Melgven</li>
-            <li>Rosporden</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="avis-google" class="review-section">
-      <div class="section-title">
-        <p>AVIS CLIENTS</p>
-        <h2>Votre avis compte</h2>
-      </div>
-      <div class="review-box">
-        <div class="review-content">
-          <h3>Vous avez fait appel à ALKIS AMÉNAGEMENT&nbsp;?</h3>
-          <p>Un avis Google aide les futurs clients à découvrir l'entreprise et à se faire une idée de la qualité du travail réalisé. Merci pour votre retour.</p>
-          <div class="review-actions">
-            <a href="https://g.page/r/CRRAOGz1E_-9EBI/review" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Laisser un avis Google</a>
-            <a class="review-link-inline" href="https://g.page/r/CRRAOGz1E_-9EBI/review" target="_blank" rel="noopener noreferrer">https://g.page/r/CRRAOGz1E_-9EBI/review</a>
-          </div>
-        </div>
-        <div class="review-qr">
-          <img src="qr-avis-google.png" alt="QR code pour laisser un avis Google à ALKIS AMÉNAGEMENT" loading="lazy">
-          <p>Scannez ce QR code avec votre téléphone pour accéder directement à la page d'avis Google.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-title">
-        <p>CONTACTEZ-NOUS</p>
-        <h2>Demandez un devis gratuit</h2>
-      </div>
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>ALKIS AMÉNAGEMENT</h3>
-          <p><strong>Gérant :</strong> Fatih ALKIS</p>
-          <p><strong>Adresse :</strong> 24 Rue Francis Marrec, 29340 Riec-sur-Bélon</p>
-          <p><strong>RCS :</strong> 105 928 154 R.C.S. Quimper</p>
-          <p><strong>Téléphone :</strong> <a href="tel:+33768149208">+33 7 68 14 92 08</a></p>
-          <p><strong>Email :</strong> <a href="mailto:alkis.amenagement@gmail.com">alkis.amenagement@gmail.com</a></p>
-        </div>
-
-        <div class="contact-form">
-          <form action="https://formspree.io/f/mbdnpqrg" method="POST" aria-describedby="privacy-note">
-            <label for="nom">Nom et prénom *</label>
-            <input id="nom" type="text" name="nom" autocomplete="name" required>
-
-            <label for="telephone">Téléphone *</label>
-            <input id="telephone" type="tel" name="telephone" autocomplete="tel" inputmode="tel" required>
-
-            <label for="email">Adresse e-mail *</label>
-            <input id="email" type="email" name="email" autocomplete="email" required>
-
-            <label for="service">Type de projet *</label>
-            <select id="service" name="service" required>
-              <option value="">-- Sélectionnez un service --</option>
-              <option value="placo">Plâtrerie / Placo / Isolation</option>
-              <option value="peinture">Peinture intérieure</option>
-              <option value="agencement">Agencement / Parquet</option>
-              <option value="global">Projet d'aménagement complet</option>
-            </select>
-
-            <label for="message">Votre projet *</label>
-            <textarea id="message" name="message" rows="5" placeholder="Lieu du chantier, surface approximative, travaux souhaités, délais envisagés..." required></textarea>
-
-            <input type="hidden" name="_subject" value="Nouvelle demande de devis - Site ALKIS AMÉNAGEMENT">
-
-            <button type="submit" class="btn btn-accent">Envoyer ma demande</button>
-            <p id="privacy-note" class="privacy-short">Les informations saisies sont utilisées uniquement pour répondre à votre demande et préparer, le cas échéant, un devis. Votre numéro de téléphone n'est pas utilisé pour de la prospection sans lien avec votre demande. En envoyant le formulaire, les données sont transmises via Formspree. <a href="#confidentialite">En savoir plus sur vos données personnelles</a>.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="informations-legales" class="legal-section">
-      <div class="section-title">
-        <p>TRANSPARENCE</p>
-        <h2>Informations légales</h2>
-      </div>
-
-      <div class="legal-grid">
-        <details id="mentions-legales" class="legal-card">
-          <summary>Mentions légales</summary>
-          <div class="legal-content">
-            <h3>Éditeur du site</h3>
-            <p>Le présent site est édité par <strong>ALKIS AMENAGEMENTS</strong>, société à responsabilité limitée à associé unique au capital de <strong>1 000 €</strong>, immatriculée au Registre du commerce et des sociétés de Quimper sous le numéro <strong>105 928 154 R.C.S. Quimper</strong>.</p>
-            <p><strong>Siège social :</strong> 24 Rue Francis Marrec, 29340 Riec-sur-Bélon, France.<br>
-            <strong>Nom affiché sur le site :</strong> ALKIS AMÉNAGEMENT.<br>
-            <strong>Gérant et directeur de la publication :</strong> Fatih ALKIS.<br>
-            <strong>E-mail :</strong> <a href="mailto:alkis.amenagement@gmail.com">alkis.amenagement@gmail.com</a>.<br>
-            <strong>Téléphone :</strong> <a href="tel:+33768149208">+33 7 68 14 92 08</a>.</p>
-
-            <h3>Hébergement</h3>
-            <p>Le site est destiné à être hébergé via <strong>GitHub Pages</strong>, service fourni par GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. GitHub met à disposition un support en ligne et indique ne pas proposer de support téléphonique public.</p>
-
-            <h3>Propriété intellectuelle</h3>
-            <p>Les textes, éléments graphiques, logo et photographies propres à ALKIS AMÉNAGEMENT présents sur le site ne peuvent être reproduits ou utilisés sans autorisation préalable, sous réserve des droits éventuels de tiers.</p>
-
-            <!-- À vérifier avant publication : ajouter le numéro de TVA intracommunautaire s'il a été attribué / s'il doit être affiché. -->
-          </div>
-        </details>
-
-        <details id="confidentialite" class="legal-card">
-          <summary>Confidentialité & RGPD</summary>
-          <div class="legal-content">
-            <h3>Responsable du traitement</h3>
-            <p>Le responsable du traitement des données collectées via ce site est <strong>ALKIS AMENAGEMENTS</strong>, 24 Rue Francis Marrec, 29340 Riec-sur-Bélon. Contact : <a href="mailto:alkis.amenagement@gmail.com">alkis.amenagement@gmail.com</a>.</p>
-
-            <h3>Données collectées et finalité</h3>
-            <p>Le formulaire de contact collecte les informations que vous renseignez : nom et prénom, numéro de téléphone, adresse e-mail, type de projet et message. Elles servent à répondre à votre demande, échanger sur votre projet et préparer un devis lorsque cela est pertinent.</p>
-
-            <h3>Base légale</h3>
-            <p>Le traitement est fondé sur les mesures précontractuelles prises à votre demande lorsque vous sollicitez des informations ou un devis.</p>
-
-            <h3>Destinataires et prestataire du formulaire</h3>
-            <p>Les données sont destinées à ALKIS AMENAGEMENTS et transitent par <strong>Formspree</strong>, prestataire technique du formulaire. Formspree indique que les soumissions sont enregistrées dans sa boîte de réception et que son infrastructure est hébergée sur Amazon Web Services aux États-Unis. Formspree indique également s'appuyer sur des clauses contractuelles types (SCC) pour ses obligations RGPD en tant que sous-traitant.</p>
-
-            <h3>Durée de conservation</h3>
-            <p>Pour les demandes qui ne donnent pas lieu à une relation contractuelle, ALKIS AMENAGEMENTS applique une durée maximale de conservation de <strong>12 mois après le dernier échange</strong>. Si une relation contractuelle est engagée, les informations nécessaires sont ensuite conservées selon les durées imposées par les obligations légales, comptables et contractuelles applicables.</p>
-
-            <h3>Vos droits</h3>
-            <p>Vous pouvez demander l'accès à vos données, leur rectification, leur effacement ou la limitation de leur traitement, dans les conditions prévues par la réglementation. Pour exercer vos droits ou poser une question sur l'utilisation de vos données, écrivez à <a href="mailto:alkis.amenagement@gmail.com">alkis.amenagement@gmail.com</a>. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>
-
-            <h3>Cookies et mesure d'audience</h3>
-            <p>Le code du site n'intègre actuellement aucun outil de mesure d'audience, publicité ou traceur non essentiel nécessitant un consentement. Si de tels services sont ajoutés ultérieurement, cette information et, si nécessaire, un mécanisme de consentement seront mis en place.</p>
-
-            <p>Pour plus d'informations : <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a> — <a href="https://formspree.io/security/" target="_blank" rel="noopener noreferrer">sécurité et conformité Formspree</a>.</p>
-          </div>
-        </details>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <img src="logo-removebg-preview.png" alt="ALKIS AMÉNAGEMENT" class="footer-logo">
-    <div class="footer-links">
-      <a href="#mentions-legales">Mentions légales</a>
-      <a href="#confidentialite">Confidentialité & RGPD</a>
-      <a href="mailto:alkis.amenagement@gmail.com">Contact</a>
-    </div>
-    <p>&copy; 2026 ALKIS AMÉNAGEMENT — Éditeur : ALKIS AMENAGEMENTS — SIREN 105 928 154 — Riec-sur-Bélon.</p>
-  </footer>
-
-  <script>
-    // Les emplacements restent propres tant que les vraies photos ne sont pas encore présentes.
-    document.querySelectorAll('.realisation-photo').forEach(function (img) {
-      function checkPhoto() {
-        if (!img.naturalWidth) {
-          img.style.display = 'none';
-        }
-      }
-
-      if (img.complete) {
-        checkPhoto();
-      } else {
-        img.addEventListener('error', checkPhoto, { once: true });
-      }
-    });
-  </script>
+<a class="skip-link" href="#services">Aller au contenu</a>
+<header>
+<div class="container nav-wrap">
+<a aria-label="ALKIS AMÉNAGEMENT - Accueil" class="brand" href="#top">
+<img alt="ALKIS AMÉNAGEMENT" src="logo-alkis.png"/>
+</a>
+<nav aria-label="Navigation principale">
+<ul>
+<li><a href="#services">Prestations</a></li>
+<li><a href="#realisations">Réalisations</a></li>
+<li><a href="#pourquoi">Pourquoi ALKIS ?</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<a class="header-cta" href="#contact">Devis gratuit</a>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">Riec-sur-Bélon · Sud-Finistère</div>
+<h1>Des intérieurs soignés, <span>du placo aux finitions.</span></h1>
+<p class="hero-lead">Plâtrerie, peinture intérieure, isolation et agencement : un accompagnement clair et des finitions propres pour vos projets de rénovation et d'aménagement.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#contact">Demander un devis</a>
+<a class="btn btn-secondary" href="#realisations">Voir nos réalisations</a>
+</div>
+<div aria-label="Points de confiance" class="hero-proof">
+<span>Garantie décennale</span>
+<span>Devis gratuit</span>
+<span>Entreprise locale</span>
+</div>
+</div>
+<div aria-hidden="true" class="hero-visual">
+<div class="hero-photo"></div>
+<div class="hero-card">
+<small>ALKIS AMÉNAGEMENT</small>
+<strong>Un interlocuteur unique pour suivre votre projet du début à la fin.</strong>
+</div>
+</div>
+</div>
+</section>
+<div class="trust-strip">
+<div class="container trust-grid">
+<div class="trust-item">Plâtrerie &amp; Placo<span>Cloisons, doublages, plafonds</span></div>
+<div class="trust-item">Peinture intérieure<span>Murs, plafonds, boiseries</span></div>
+<div class="trust-item">Isolation<span>Confort thermique &amp; acoustique</span></div>
+<div class="trust-item">Agencement<span>Parquets, verrières, optimisation</span></div>
+</div>
+</div>
+<section class="content" id="services">
+<div class="container">
+<div class="section-head">
+<div>
+<div class="kicker">Nos expertises</div>
+<h2>Quatre métiers, un seul projet bien suivi.</h2>
+</div>
+<p class="section-intro">Plâtrerie, peinture, isolation et agencement : des solutions adaptées à vos projets de rénovation intérieure.</p>
+</div>
+<div class="services-grid">
+<article class="service-card">
+<div class="service-num">01</div>
+<h3>Plâtrerie &amp; Placo</h3>
+<p>Pose de plaques de plâtre, création de cloisons séparatives, doublage thermique et phonique, faux plafonds et bandes d'armature.</p>
+</article>
+<article class="service-card">
+<div class="service-num">02</div>
+<h3>Peinture Intérieure &amp; Décoration</h3>
+<p>Préparation minutieuse des supports, mise en peinture des murs, plafonds et boiseries intérieures avec des finitions soignées.</p>
+</article>
+<article class="service-card">
+<div class="service-num">03</div>
+<h3>Isolation Intérieure</h3>
+<p>Aménagement de combles, doublage des murs et renforcement de l'isolation pour améliorer le confort thermique et acoustique.</p>
+</article>
+<article class="service-card">
+<div class="service-num">04</div>
+<h3>Agencement Intérieur</h3>
+<p>Pose de parquets stratifiés ou flottants, verrières intérieures, éléments d'agencement et optimisation des espaces.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="content" id="pourquoi" style="padding-top:20px;">
+<div class="container">
+<div class="features-wrap">
+<div class="features-head">
+<div class="kicker">Qualité &amp; proximité</div>
+<h2>Pourquoi choisir ALKIS AMÉNAGEMENT ?</h2>
+</div>
+<div class="features-grid">
+<div class="feature">
+<b>Interlocuteur unique</b>
+<p>Un accompagnement personnalisé dirigé par M. Fatih ALKIS du début à la fin du chantier.</p>
+</div>
+<div class="feature">
+<b>Chantiers propres</b>
+<p>Protection rigoureuse des lieux et nettoyage complet après chaque intervention.</p>
+</div>
+<div class="feature">
+<b>Garantie décennale</b>
+<p>Tous vos travaux sont couverts par notre assurance responsabilité civile et décennale.</p>
+</div>
+<div class="feature">
+<b>Réactivité</b>
+<p>Étude rapide de votre projet et transmission d'un devis gratuit sous 48 heures.</p>
+</div>
+</div>
+<div class="zone-box">
+<h3>Zone d'intervention</h3>
+<p>Basée à <strong>Riec-sur-Bélon</strong>, l'entreprise intervient dans un rayon d'environ <strong>1 heure de route</strong>.</p>
+<p><strong>D'Ouest en Est :</strong> de Plozévet à Plouhinec, notamment via Quimper, Concarneau, Pont-Aven et Quimperlé.</p>
+<p><strong>Vers le Nord :</strong> jusqu'à Châteauneuf-du-Faou et le centre Finistère.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="content gallery" id="realisations">
+<div class="container">
+<div class="section-head">
+<div>
+<div class="kicker">Photos de chantiers</div>
+<h2>Quelques réalisations.</h2>
+</div>
+<p class="section-intro">Découvrez nos domaines d’intervention et les finitions qui font la différence.</p>
+</div>
+<div class="gallery-grid">
+<article class="gallery-item">
+<a class="gallery-click" href="realisations.html#realisation-1"><img alt="Réalisation ALKIS AMÉNAGEMENT — photographie de chantier 1" loading="lazy" src="assets/images/realisation-1.jpg"/></a>
+<div class="gallery-caption">Pose de cloisons &amp; isolation</div>
+</article>
+<article class="gallery-item">
+<a class="gallery-click" href="realisations.html#realisation-1"><img alt="Réalisation ALKIS AMÉNAGEMENT — photographie de chantier 2" loading="lazy" src="assets/images/realisation-2.jpg"/></a>
+<div class="gallery-caption">Finitions peinture intérieure</div>
+</article>
+<article class="gallery-item">
+<a class="gallery-click" href="realisations.html#autres-realisations"><img alt="Réalisation ALKIS AMÉNAGEMENT — photographie de chantier 3" loading="lazy" src="assets/images/realisation-3.jpg"/></a>
+<div class="gallery-caption">Agencement &amp; parquets</div>
+</article>
+</div>
+<p class="gallery-note">Cliquez sur une photo pour découvrir notre book de chantiers.</p>
+</div>
+</section>
+<section aria-labelledby="avis-title" class="content" id="avis-google"><div class="container" style="display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;background:#fff;border-radius:24px;padding:35px;border:1px solid #e7e2db"><div><p class="kicker">Votre avis compte</p><h2 id="avis-title" style="color:#182a3a;font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.15">Nos clients parlent de nous</h2><p>Vous avez fait appel à ALKIS AMÉNAGEMENT ? Partagez votre expérience sur Google.</p><a class="btn btn-primary" href="https://g.page/r/CRRAOGz1E_-9EBI/review" rel="noopener noreferrer" style="margin-top:14px" target="_blank">Laisser un avis Google</a></div><img alt="QR code pour déposer un avis Google sur ALKIS AMÉNAGEMENT" height="110" loading="lazy" src="qr-avis-google.png" width="110"/></div></section><section class="contact-section" id="contact">
+<div class="container">
+<div class="contact-shell">
+<div class="contact-copy">
+<div class="kicker">Contactez-nous</div>
+<h2 class="contact-title">Parlons de votre projet.</h2>
+<p>Décrivez votre besoin et le lieu de votre chantier pour obtenir un devis gratuit.</p>
+<div class="contact-info">
+<div><strong>ALKIS AMÉNAGEMENT</strong></div>
+<div><strong>Gérant :</strong> Fatih ALKIS</div>
+<div><strong>Adresse :</strong> 24 Rue Francis Marrec, 29340 Riec-sur-Bélon</div>
+<div><strong>RCS :</strong> 105 928 154 R.C.S. Quimper</div>
+<div><strong>Téléphone :</strong><a href="tel:+33768149208">07 68 14 92 08</a></div>
+<div><strong>Email :</strong> <a href="mailto:alkis.amenagement@gmail.com">alkis.amenagement@gmail.com</a></div>
+</div>
+</div>
+<div class="contact-form">
+<form action="https://formspree.io/f/mbdnpqrg" method="POST">
+<input name="nom" placeholder="Votre nom et prénom" required="" type="text"/>
+<input name="telephone" placeholder="Votre numéro de téléphone" required="" type="tel"/>
+<input name="email" placeholder="Votre adresse email" required="" type="email"/>
+<select name="service" required="">
+<option value="">-- Sélectionnez un service --</option>
+<option value="placo">Plâtrerie / Placo / Isolation</option>
+<option value="peinture">Peinture intérieure</option>
+<option value="agencement">Agencement / Parquet</option>
+<option value="global">Projet d'aménagement complet</option>
+</select>
+<textarea name="message" placeholder="Décrivez votre projet (lieu du chantier, surface approximative, délais souhaités...)" required="" rows="5"></textarea>
+<p class="form-privacy">Les informations transmises sont utilisées pour répondre à votre demande de contact ou de devis. Pour en savoir plus, consultez notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+<button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-inner">
+<img alt="ALKIS AMÉNAGEMENT" class="footer-logo" src="logo-alkis.png"/>
+<p>© 2026 ALKIS AMÉNAGEMENT — Tous droits réservés.<br/>SIREN : 105 928 154 — Riec-sur-Bélon.</p>
+</div>
+<div class="container legal-nav"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="#accessibilite" id="open-a11y-footer">Accessibilité</a></div>
+</footer>
+<button aria-controls="accessibilite" aria-expanded="false" class="a11y-toggle" id="a11y-open" type="button">⚙ Accessibilité</button>
+<aside aria-labelledby="a11y-title" aria-modal="false" class="a11y-panel" hidden="" id="accessibilite" role="dialog">
+<button aria-label="Fermer le panneau d’accessibilité" class="a11y-close" id="a11y-close" type="button">×</button>
+<h2 id="a11y-title">Confort de lecture</h2>
+<p>Personnalisez l’affichage. Les préférences sont enregistrées dans ce navigateur.</p>
+<div class="a11y-options">
+<button aria-pressed="false" data-setting="large" type="button">Agrandir le texte</button>
+<button aria-pressed="false" data-setting="extra-large" type="button">Texte très grand</button>
+<button aria-pressed="false" data-setting="contrast" type="button">Contraste renforcé</button>
+<button aria-pressed="false" data-setting="spacing" type="button">Espacement du texte</button>
+<button aria-pressed="false" data-setting="underline" type="button">Souligner les liens</button>
+<button aria-pressed="false" data-setting="motion" type="button">Réduire les animations</button>
+<button id="a11y-reset" type="button">Réinitialiser les réglages</button>
+</div>
+<p style="margin-top:12px">Ces options améliorent le confort, mais ne remplacent pas un audit complet d’accessibilité.</p>
+</aside>
+<script>
+(function(){
+ const keys=['large','extra-large','contrast','spacing','underline','motion'];
+ const root=document.documentElement, panel=document.getElementById('accessibilite');
+ const open=document.getElementById('a11y-open'), close=document.getElementById('a11y-close');
+ let state={};try{state=JSON.parse(localStorage.getItem('alkis-a11y')||'{}')}catch(e){}
+ function apply(){
+  keys.forEach(k=>root.classList.toggle('a11y-'+k,!!state[k]));
+  panel.querySelectorAll('[data-setting]').forEach(b=>b.setAttribute('aria-pressed',String(!!state[b.dataset.setting])));
+  try{localStorage.setItem('alkis-a11y',JSON.stringify(state))}catch(e){}
+ }
+ function show(){panel.hidden=false;open.setAttribute('aria-expanded','true');close.focus()}
+ function hide(){panel.hidden=true;open.setAttribute('aria-expanded','false');open.focus()}
+ open.addEventListener('click',()=>panel.hidden?show():hide());
+ close.addEventListener('click',hide);
+ document.getElementById('open-a11y-footer').addEventListener('click',e=>{e.preventDefault();show()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)hide()});
+ panel.querySelectorAll('[data-setting]').forEach(b=>b.addEventListener('click',()=>{
+  const k=b.dataset.setting;state[k]=!state[k];
+  if(k==='large'&&state[k])state['extra-large']=false;
+  if(k==='extra-large'&&state[k])state['large']=false;
+  apply();
+ }));
+ document.getElementById('a11y-reset').addEventListener('click',()=>{state={};apply()});
+ apply();
+})();
+</script>
 </body>
 </html>
