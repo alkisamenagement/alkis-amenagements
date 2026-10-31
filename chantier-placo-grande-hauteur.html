@@ -5,12 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🔨 Chantier en cours • Grande hauteur sous plafond - ALKIS AMÉNAGEMENT</title>
 <style>
+
+    /* Header identique à index.html */
+    .container{
+      width:min(1180px, calc(100% - 40px));
+      margin-inline:auto;
+    }
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.94);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(24,42,58,.08);
+    }
+    .nav-wrap{
+      min-height:82px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:28px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+      flex:0 0 auto;
+    }
+    .brand img{
+      width:96px;
+      max-height:76px;
+      height:auto;
+      object-fit:contain;
+    }
+    nav ul{
+      list-style:none;
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+    nav a{
+      text-decoration:none;
+      color:#182A3A;
+      font-weight:700;
+      font-size:.95rem;
+      transition:color .2s ease;
+    }
+    nav a:hover{color:#846A4E}
+    .header-cta{
+      text-decoration:none;
+      font-weight:800;
+      color:#FFFFFF;
+      background:#A88B68;
+      padding:12px 18px;
+      border-radius:999px;
+      white-space:nowrap;
+      transition:transform .2s ease, background .2s ease;
+    }
+    .header-cta:hover{
+      transform:translateY(-2px);
+      background:#846A4E;
+    }
+    @media (max-width:980px){
+      nav{display:none}
+    }
+    @media (max-width:680px){
+      .container{width:min(1180px, calc(100% - 28px))}
+      .nav-wrap{min-height:70px;gap:12px}
+      .brand img{width:79px;max-height:63px}
+      .header-cta{padding:10px 14px;font-size:.88rem}
+    }
+
 :root{--primary:#182A3A;--accent:#A88B68;--paper:#F8F7F4;--white:#fff;--text:#283440;--muted:#687582;--line:#E7E2DB}
 *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 body{background:var(--paper);color:var(--text);line-height:1.65}
-header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:50}
-.header-inner{max-width:1180px;margin:auto;min-height:64px;padding:.35rem 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{width:105px;height:auto} .back{background:var(--accent);color:#fff;text-decoration:none;padding:.75rem 1.15rem;border-radius:999px;font-weight:800}
 .hero{background:var(--primary);color:#fff;text-align:center;padding:3.5rem 1.5rem}
 .cat{color:#D9C3AA;font-size:.85rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
 .hero h1{font-size:clamp(1.8rem,3.6vw,3rem);line-height:1.1}
@@ -21,11 +89,26 @@ main{max-width:1100px;margin:auto;padding:3rem 20px 5rem}
 .photos img{width:100%;height:500px;object-fit:cover;display:block;transition:transform .2s}
 .photos a:hover img{transform:scale(1.015)}
 footer{background:var(--primary);color:#CBD6DF;text-align:center;padding:2rem 1rem}
-@media(max-width:760px){.logo{width:90px}main{padding:2.5rem 1rem 4rem}.photos{grid-template-columns:1fr}.photos img{height:auto}}
+@media(max-width:760px){main{padding:2.5rem 1rem 4rem}.photos{grid-template-columns:1fr}.photos img{height:auto}}
 </style>
 </head>
 <body>
-<header><div class="header-inner"><a href="index.html"><img class="logo" src="logo-alkis.png" alt="ALKIS AMÉNAGEMENT"></a><a class="back" href="realisations.html">← Toutes les réalisations</a></div></header>
+<header>
+<div class="container nav-wrap">
+<a aria-label="ALKIS AMÉNAGEMENT - Accueil" class="brand" href="index.html#top">
+<img alt="ALKIS AMÉNAGEMENT" src="logo-alkis.png"/>
+</a>
+<nav aria-label="Navigation principale">
+<ul>
+<li><a href="index.html#services">Prestations</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="index.html#pourquoi">Pourquoi ALKIS ?</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+<a class="header-cta" href="index.html#contact">Devis gratuit</a>
+</div>
+</header>
 <section class="hero"><div class="cat">Plâtrerie / Placo</div><h1>🔨 Chantier en cours • Grande hauteur sous plafond</h1></section>
 <main>
   <div class="desc"><p>Mise en place des plaques de plâtre et travail des joints sur ce bel espace avec une grande hauteur sous plafond.</p><p style='margin-top:1rem'>Encore quelques étapes avant les finitions, mais le volume prend déjà forme. On aime particulièrement ce type de chantier où la technique et le soin des détails font toute la différence.</p></div>
