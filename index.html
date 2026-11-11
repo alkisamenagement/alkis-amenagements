@@ -621,7 +621,27 @@ html.a11y-contrast .hero h1 span{color:#ffe09a!important}
 .skip-link:focus{top:8px}
 @media(max-width:680px){.hero{background-position:60% center}.hero-grid{min-height:590px;padding:76px 0}.a11y-toggle{right:12px;bottom:12px}.a11y-panel{right:12px;bottom:72px}.legal-nav{justify-content:center}}
 
-  .gallery-click{display:block;height:100%;text-decoration:none}.gallery-click:focus-visible{outline:3px solid #d9c3aa;outline-offset:-5px}.contact-info a{color:#182a3a;font-weight:700}@media(max-width:680px){#avis-google .container{grid-template-columns:1fr!important}}</style>
+  .gallery-click{display:block;height:100%;text-decoration:none}.gallery-click:focus-visible{outline:3px solid #d9c3aa;outline-offset:-5px}.contact-info a{color:#182a3a;font-weight:700}@media(max-width:680px){#avis-google .container{grid-template-columns:1fr!important}}
+/* Avis Google ALKIS — carrousel compact, sans dépendance */
+.alkis-reviews{grid-column:1/-1;min-width:0;margin-top:12px;padding-top:24px;border-top:1px solid var(--line)}
+.alkis-reviews-head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:15px}
+.alkis-reviews-head h3{color:var(--navy);font-size:1.1rem;line-height:1.3}
+.alkis-review-controls{display:flex;align-items:center;gap:10px}
+.alkis-review-controls[hidden]{display:none}
+.alkis-review-arrow{border:1px solid #d5c8b8;background:var(--white);color:var(--navy);width:40px;height:40px;border-radius:50%;font:800 1.35rem/1 inherit;cursor:pointer;display:grid;place-items:center}
+.alkis-review-arrow:hover{background:var(--sand)}
+.alkis-review-arrow:focus-visible{outline:3px solid var(--chestnut);outline-offset:3px}
+.alkis-review-viewport{overflow:hidden;border-radius:17px}
+.alkis-review-track{display:flex;transition:transform .45s ease;will-change:transform}
+.alkis-review-card{flex:0 0 100%;min-width:0;box-sizing:border-box;background:#f8f7f4;border:1px solid var(--line);border-radius:17px;padding:22px 24px;min-height:165px;display:flex;flex-direction:column;justify-content:center;gap:9px}
+.alkis-review-stars{color:#987040;letter-spacing:.1em;font-size:1.16rem;line-height:1.2}
+.alkis-review-quote{font-size:1rem;line-height:1.65;color:var(--text);overflow-wrap:anywhere}
+.alkis-review-author{font-size:.92rem;font-weight:800;color:var(--navy)}
+.alkis-review-source{color:var(--muted);font-size:.8rem}
+.alkis-review-count{color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums}
+@media(max-width:680px){.alkis-review-card{padding:18px 17px;min-height:200px}.alkis-reviews-head{align-items:flex-start}.alkis-review-arrow{width:38px;height:38px}}
+@media(prefers-reduced-motion:reduce){.alkis-review-track{transition:none}}
+</style>
 <meta content="index,follow,max-image-preview:large" name="robots"/><meta content="#1A2B3C" name="theme-color"/><link href="https://alkis-amenagements.fr/" rel="canonical"/><link href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231A2B3C%27/%3E%3Cpath d=%27M12 46 27 16h10l15 30H41l-3-7H26l-3 7H12zm18-16h4l-2-5-2 5z%27 fill=%27%23A88B68%27/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/><meta content="fr_FR" property="og:locale"/><meta content="website" property="og:type"/><meta content="Plaquiste &amp; peintre intérieur à Riec-sur-Bélon | ALKIS AMÉNAGEMENT" property="og:title"/><meta content="Plâtrerie, placo, peinture intérieure, isolation et agencement autour de Riec-sur-Bélon. Devis gratuit." property="og:description"/><meta content="https://alkis-amenagements.fr/" property="og:url"/><script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -816,7 +836,12 @@ html.a11y-contrast .hero h1 span{color:#ffe09a!important}
 <p class="gallery-note">Cliquez sur une photo pour découvrir notre book de chantiers.</p>
 </div>
 </section>
-<section aria-labelledby="avis-title" class="content" id="avis-google"><div class="container" style="display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;background:#fff;border-radius:24px;padding:35px;border:1px solid #e7e2db"><div><p class="kicker">Votre avis compte</p><h2 id="avis-title" style="color:#182a3a;font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.15">Nos clients parlent de nous</h2><p>Vous avez fait appel à ALKIS AMÉNAGEMENT ? Partagez votre expérience sur Google.</p><a class="btn btn-primary" href="https://g.page/r/CRRAOGz1E_-9EBI/review" rel="noopener noreferrer" style="margin-top:14px" target="_blank">Laisser un avis Google</a></div><img alt="QR code pour déposer un avis Google sur ALKIS AMÉNAGEMENT" height="110" loading="lazy" src="qr-avis-google.png" width="110"/></div></section><section class="contact-section" id="contact">
+<section aria-labelledby="avis-title" class="content" id="avis-google"><div class="container" style="display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;background:#fff;border-radius:24px;padding:35px;border:1px solid #e7e2db"><div><p class="kicker">Votre avis compte</p><h2 id="avis-title" style="color:#182a3a;font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.15">Nos clients parlent de nous</h2><p>Vous avez fait appel à ALKIS AMÉNAGEMENT ? Partagez votre expérience sur Google.</p><a class="btn btn-primary" href="https://g.page/r/CRRAOGz1E_-9EBI/review" rel="noopener noreferrer" style="margin-top:14px" target="_blank">Laisser un avis Google</a></div><img alt="QR code pour déposer un avis Google sur ALKIS AMÉNAGEMENT" height="110" loading="lazy" src="qr-avis-google.png" width="110"/><div class="alkis-reviews" aria-label="Témoignages de clients Google">
+<div class="alkis-reviews-head"><h3>Avis de nos clients sur Google</h3><div class="alkis-review-controls" id="alkis-review-controls" hidden><button class="alkis-review-arrow" id="alkis-review-prev" type="button" aria-label="Avis précédent">&#8592;</button><span class="alkis-review-count" id="alkis-review-count" aria-live="polite"></span><button class="alkis-review-arrow" id="alkis-review-next" type="button" aria-label="Avis suivant">&#8594;</button></div></div>
+<div class="alkis-review-viewport" id="alkis-review-viewport" aria-label="Avis clients" role="region"><div class="alkis-review-track" id="alkis-review-track">
+<article class="alkis-review-card" aria-label="Avis de Elisabeth Faucon, 5 étoiles sur 5"><div class="alkis-review-stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote class="alkis-review-quote">Travaux parfaits. Sens du détail. Chantier très propre. M. Alkis est cordial et agréable. Je recommande</blockquote><p class="alkis-review-author">Elisabeth Faucon</p><p class="alkis-review-source">Avis Google authentique</p></article>
+<!-- Ajouter ici uniquement des avis Google authentiques, sans modifier leurs textes. Chaque nouvel avis est un article. -->
+</div></div></div></div></section><section class="contact-section" id="contact">
 <div class="container">
 <div class="contact-shell">
 <div class="contact-copy">
@@ -901,6 +926,43 @@ html.a11y-contrast .hero h1 span{color:#ffe09a!important}
  }));
  document.getElementById('a11y-reset').addEventListener('click',()=>{state={};apply()});
  apply();
+})();
+</script>
+
+<script>
+/* Avis clients ALKIS : passage automatique uniquement avec >= 2 avis ; toute flèche stoppe définitivement l'auto. */
+(function(){
+  const track=document.getElementById('alkis-review-track');
+  const view=document.getElementById('alkis-review-viewport');
+  const controls=document.getElementById('alkis-review-controls');
+  if(!track||!view||!controls)return;
+  const cards=Array.from(track.querySelectorAll('.alkis-review-card'));
+  const prev=document.getElementById('alkis-review-prev');
+  const next=document.getElementById('alkis-review-next');
+  const counter=document.getElementById('alkis-review-count');
+  const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
+  let index=0, timer=null, manuallyStopped=false, hovered=false, focused=false;
+  function show(i){
+    index=(i+cards.length)%cards.length;
+    track.style.transform='translateX(-'+(index*100)+'%)';
+    cards.forEach((card,n)=>{card.setAttribute('aria-hidden',String(n!==index));});
+    if(cards.length>1)counter.textContent=(index+1)+' / '+cards.length;
+  }
+  function stop(){if(timer!==null){clearInterval(timer);timer=null;}}
+  function canRun(){return cards.length>1&&!manuallyStopped&&!hovered&&!focused&&!motion.matches&&!document.hidden;}
+  function start(){stop();if(canRun())timer=setInterval(()=>show(index+1),7000);}
+  if(cards.length>1){
+    controls.hidden=false;
+    prev.addEventListener('click',()=>{manuallyStopped=true;stop();show(index-1);});
+    next.addEventListener('click',()=>{manuallyStopped=true;stop();show(index+1);});
+    view.addEventListener('mouseenter',()=>{hovered=true;stop();});
+    view.addEventListener('mouseleave',()=>{hovered=false;start();});
+    view.addEventListener('focusin',()=>{focused=true;stop();});
+    view.addEventListener('focusout',()=>{focused=false;start();});
+    document.addEventListener('visibilitychange',start);
+    if(motion.addEventListener)motion.addEventListener('change',start);
+  }
+  show(0);start();
 })();
 </script>
 </body>
